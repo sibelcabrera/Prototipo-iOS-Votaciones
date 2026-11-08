@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+
+    <key>CFBundleURLTypes</key>
+    <array>
+
+        <!-- Google Sign In -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>Google Sign In</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>355459080928-921g4ianhhjkn3f2n9r3hmah1b0mugf4.apps.googleusercontent.com</string>
+            </array>
+        </dict>
+
+        <!-- Google -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>Google</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>com.googleusercontent.apps.355459080928-921g4ianhhjkn3f2n9r3hmah1b0mugf4</string>
+            </array>
+        </dict>
+
+        <!-- FACEBOOK (ESTO ES LO IMPORTANTE) -->
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>facebook</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!-- URL Scheme correcto: fb + tu App ID -->
+                <string>fb2362826327552412</string>
+            </array>
+        </dict>
+
+    </array>
+
+    <!-- Facebook keys obligatorias -->
+    <key>FacebookAppID</key>
+    <string>2362826327552412</string>
+
+    <key>FacebookClientToken</key>
+    <string>TU_FACEBOOK_CLIENT_TOKEN</string>
+
+    <!-- Permisos para abrir Facebook -->
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>fbapi</string>
+        <string>fbauth2</string>
+        <string>fb-messenger-share-api</string>
+        <string>fbshareextension</string>
+    </array>
+
+    <!-- Tu configuración -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>narvaez.alwaysdata.net</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+</dict>
+</plist>

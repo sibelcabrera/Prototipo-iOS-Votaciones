@@ -1,0 +1,1 @@
+import Foundationimport SwiftUIclass TabStateManager: ObservableObject {    @Published var selectedTab: Int = 0    let statisticsTabIndex = 2}
